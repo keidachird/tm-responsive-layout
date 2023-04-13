@@ -1,6 +1,6 @@
 :root {
-  --dark: #000;
-  --light: #fff;
+  --dark: #16181a;
+  --light: #e6eff3;
 }
 
 html {
@@ -14,25 +14,9 @@ body {
   flex-direction: column;
 
   font-family: sans-serif;
-  font-size: 1.6rem;
   color: var(--light);
   background: url("img/bg.jpg") no-repeat fixed left;
   background-size: cover;
-}
-
-.main {
-  flex: 1;
-  padding: 2rem;
-
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 3rem;
-}
-
-.nav {
-  align-self: start;
-  position: sticky;
-  top: 2rem;
 }
 
 .header,
@@ -47,6 +31,37 @@ body {
 
 .header__title {
   margin: 0;
+}
+
+.main {
+  flex: 1;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 3rem;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.gallery__picture:target {
+  filter: drop-shadow(0 0 1rem #007672) saturate(2);
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
+  border-radius: 2rem;
+}
+
+.nav {
+  align-self: start;
+  position: sticky;
+  top: 2rem;
 }
 
 .list {
@@ -71,22 +86,7 @@ body {
 
   text-decoration: none;
   color: inherit;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-.gallery__picture:target {
-  filter: drop-shadow(0 0 1rem #007672) saturate(2);
-}
-
-.gallery__img {
-  display: block;
-  width: 100%;
-  border-radius: 2rem;
+  font-size: 2rem;
 }
 
 .footer {
