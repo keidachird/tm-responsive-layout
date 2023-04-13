@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Layout</title>
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body></body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Solar system</h1>
+  </header>
+
+  <main class="main container">
+    <div class="gallery">
+      <picture class="gallery__picture" id="sun">
+        <source srcset="img/sun-480.webp" media="(min-width:1200px)">
+        <source srcset="img/sun-360.webp" media="(min-width:600px)">
+        <img src="img/sun-240.webp" alt="Sun image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="mercury">
+        <source srcset="img/mercury-480.webp" media="(min-width:1200px)">
+        <source srcset="img/mercury-360.webp" media="(min-width:600px)">
+        <img src="img/mercury-240.webp" alt="Mercury image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="venus">
+        <source srcset="img/venus-480.webp" media="(min-width:1200px)">
+        <source srcset="img/venus-360.webp" media="(min-width:600px)">
+        <img src="img/venus-240.webp" alt="Venus image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="earth">
+        <source srcset="img/earth-480.webp" media="(min-width:1200px)">
+        <source srcset="img/earth-360.webp" media="(min-width:600px)">
+        <img src="img/earth-240.webp" alt="Earth image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="mars">
+        <source srcset="img/mars-480.webp" media="(min-width:1200px)">
+        <source srcset="img/mars-360.webp" media="(min-width:600px)">
+        <img src="img/mars-240.webp" alt="Mars image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="jupiter">
+        <source srcset="img/jupiter-480.webp" media="(min-width:1200px)">
+        <source srcset="img/jupiter-360.webp" media="(min-width:600px)">
+        <img src="img/jupiter-240.webp" alt="Jupiter image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="saturn">
+        <source srcset="img/saturn-480.webp" media="(min-width:1200px)">
+        <source srcset="img/saturn-360.webp" media="(min-width:600px)">
+        <img src="img/saturn-240.webp" alt="Saturn image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="uranus">
+        <source srcset="img/uranus-480.webp" media="(min-width:1200px)">
+        <source srcset="img/uranus-360.webp" media="(min-width:600px)">
+        <img src="img/uranus-240.webp" alt="Uranus image" class="gallery__img">
+      </picture>
+
+      <picture class="gallery__picture" id="neptune">
+        <source srcset="img/neptune-480.webp" media="(min-width:1200px)">
+        <source srcset="img/neptune-360.webp" media="(min-width:600px)">
+        <img src="img/neptune-240.webp" alt="Neptune image" class="gallery__img">
+      </picture>
+    </div>
+
+    <nav class="nav">
+      <ul class="list">
+        <li class="list__item"><a href="#sun" class="list__link">Sun</a></li>
+        <li class="list__item"><a href="#mercury" class="list__link">Mercury</a></li>
+        <li class="list__item"><a href="#venus" class="list__link">Venus</a></li>
+        <li class="list__item"><a href="#earth" class="list__link">Earth</a></li>
+        <li class="list__item"><a href="#mars" class="list__link">Mars</a></li>
+        <li class="list__item"><a href="#jupiter" class="list__link">Jupiter</a></li>
+        <li class="list__item"><a href="#saturn" class="list__link">Saturn</a></li>
+        <li class="list__item"><a href="#uranus" class="list__link">Uranus</a></li>
+        <li class="list__item"><a href="#neptune" class="list__link">Neptune</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <p class="footer__text">Footer</p>
+  </footer>
+</body>
+
 </html>
