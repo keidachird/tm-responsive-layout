@@ -1,6 +1,6 @@
 :root {
-  --dark: #16181a;
-  --light: #e6eff3;
+  --black: #16181a;
+  --white: #e6eff3;
   --green: #007672;
 }
 
@@ -15,14 +15,14 @@ body {
   flex-direction: column;
 
   font-family: sans-serif;
-  color: var(--light);
+  color: var(--white);
   background: url("img/bg.jpg") no-repeat fixed left;
   background-size: cover;
 }
 
 .header,
 .footer {
-  background-color: var(--dark);
+  background-color: var(--black);
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -80,7 +80,7 @@ body {
   display: block;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: var(--dark);
+  background-color: var(--black);
 
   text-decoration: none;
   color: inherit;
@@ -92,7 +92,7 @@ body {
 .list__link:hover,
 .list__link:focus {
   background-color: var(--green);
-  color: var(--dark);
+  color: var(--black);
   box-shadow: 0 0 1rem var(--green);
 }
 
